@@ -1,0 +1,14 @@
+{
+  "name": "hyper",
+  "version": "0.0.0",
+  "description": "hyper",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feisty/hyper"
+  },
+  "dependencies": {
+    "agent": "feisty/agent"
+  },
+  "bin": "bin/hyper"
+}
