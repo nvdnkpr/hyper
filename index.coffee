@@ -1,7 +1,7 @@
 Agent = require 'agent'
-Server = require 'server'
 # Client = require 'client'
 Entry = require 'entry'
+Server = require 'server'
 
 module.exports = (callback) ->
   

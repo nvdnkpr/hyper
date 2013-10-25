@@ -8,7 +8,9 @@
     "url": "https://github.com/feisty/hyper"
   },
   "dependencies": {
-    "agent": "feisty/agent"
+    "agent": "feisty/agent",
+    "entry": "feisty/entry",
+    "server": "feisty/server"
   },
   "bin": "bin/hyper"
 }
