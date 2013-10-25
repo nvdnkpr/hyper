@@ -1,7 +1,7 @@
 {
   "name": "hyper",
-  "version": "0.0.0",
-  "description": "hyper",
+  "version": "0.1.0",
+  "description": "Hypervisor",
   "license": "WTFPL",
   "repository": {
     "type": "git",
