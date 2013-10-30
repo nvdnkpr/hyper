@@ -15,8 +15,6 @@ module.exports = (callback) ->
   
   catch error
     
-    console.error error
-    
     agent = new Entry
     
-    callback null, agent
+    callback error, agent
