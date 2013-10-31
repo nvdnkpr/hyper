@@ -3,7 +3,3 @@
 hyper = require '..'
 
 hyper (error, agent) =>
-  
-  # console.log error, agent
-  
-  console.log agent.constructor.name
