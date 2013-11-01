@@ -8,16 +8,20 @@ Entry = require('entry');
 Server = require('server');
 
 module.exports = function(callback) {
-  var agent, config, error;
+  var agent, config, error, server;
+  if (callback == null) {
+    callback = function() {};
+  }
   try {
     config = require("" + (process.cwd()) + "/config.coffee");
-    agent = new Server({
+    server = new Server({
       config: config
     });
-    return callback(null, agent);
+    server.boot();
+    return typeof callback === "function" ? callback(null, server) : void 0;
   } catch (_error) {
     error = _error;
     agent = new Entry;
-    return callback(error, agent);
+    return typeof callback === "function" ? callback(error, agent) : void 0;
   }
 };

@@ -3,15 +3,17 @@ Agent = require 'agent'
 Entry = require 'entry'
 Server = require 'server'
 
-module.exports = (callback) ->
+module.exports = (callback = ->) ->
   
   try
     
     config = require "#{process.cwd()}/config.coffee"
     
-    agent = new Server {config}
+    server = new Server {config}
     
-    callback null, agent
+    do server.boot
+    
+    callback? null, server
     
     # blessed = require 'blessed'
     
@@ -56,4 +58,4 @@ module.exports = (callback) ->
     
     agent = new Entry
     
-    callback error, agent
+    callback? error, agent
