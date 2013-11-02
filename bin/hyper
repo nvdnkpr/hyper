@@ -3,3 +3,5 @@
 hyper = require '..'
 
 hyper (error, agent) =>
+  
+  console.error error if error?
